@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LF$ Gravações</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="logo"><h1>🎵 LF$ Gravações</h1><p>Sua música, do seu jeito.</p></div>
+
+<label>👤 Nome do Cliente</label>
+<input id="cliente" type="text" placeholder="Nome">
+
+<label>📞 WhatsApp</label>
+<input id="telefone" type="tel" placeholder="(38) 99999-9999">
+
+<label>💿 Tipo de Gravação</label>
+<select id="tipo"><option>Músicas</option><option>Vídeos</option><option>Músicas + Vídeos</option></select>
+
+<label>💾 Tamanho do Pendrive</label>
+<select id="pendrive"><option>8 GB</option><option>16 GB</option><option>32 GB</option><option>64 GB</option><option>128 GB</option></select>
+
+<label>🎵 Lista de músicas</label>
+<textarea id="musica" rows="8" placeholder="Uma música por linha"></textarea>
+
+<button onclick="adicionarMusica()">➕ Adicionar à Lista</button>
+
+<h2>Lista</h2>
+<p id="contador">Total de músicas: 0</p>
+<ul id="lista"></ul>
+
+<label>📝 Observações</label>
+<textarea id="observacao" rows="4"></textarea>
+
+<button onclick="limparLista()">🗑 Limpar Lista</button>
+<button onclick="enviarLista()">📱 Enviar Pedido</button>
+
+<footer><p>© 2026 LF$ Gravações</p></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
